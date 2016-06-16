@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<!-- 
+
+主色调 
+
+红色	rgb:131 15 15
+		HEX:#830F0F
+
+黄色    rgb:255 233 0
+		HEX #FFE900
+
+常规文字颜色  #300
+
+摘要文字颜色  #7c7c7c
+
+超链接  #900
+
+
+
+高清看两会 背景颜色  #06357b
+
+ -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2016年青洽会_青海羚网</title>
+	<meta name="Keywords" content="青洽会,环湖电动车赛,CEVR,2016年青洽会,青海羚网专题" />
+	<meta name="description" content="2016年“青洽会”暨第三届环湖电动车赛，青海羚网特别报道。" />
+	<link rel="stylesheet" type="text/css" href="2016qglh.css">
+	<meta name="author" content="yefengs 2016-02-15 10:34"/>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/normal.js"></script>
+<!--[if lt IE 9]> 
+	<script type="text/javascript" src="http://www.qhlingwang.cn/style/js/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<section id="top-menu"> 
+	<nav class="w1024 top-nav-list">
+		<ul>
+			<li>
+				<a href="#">首页</a>
+			</li>
+			<li>
+				<a href="#">首页</a>
+			</li>
+			<li>
+				<a href="#">首页</a>
+			</li>
+			<li>
+				<a href="#">首页</a>
+			</li>
+			<li>
+				<a href="#">首页</a>
+			</li>
+		</ul>
+	</nav>
+</section>
+<header id="header">
+	<section id="top-banner" role="banner">
+		<!-- auto x 500px -->
+		<div class="w1024 ant-title">
+			<i class="jujiao"></i>
+			<i class="lianghui"></i>
+			<i class="qhlingwang"></i>	
+		</div>
+	</section>
+	<nav id="main-nav">
+	<i class="nav-style"></i>
+	<i class="nav-style nav-style-right"></i>
+		<ul>
+			<li>
+				<a href="#">首页</a>
+			</li>
+			<li>
+				<a href="#">两会看点</a>
+			</li>
+			<li>
+				<a href="#">提案议案</a>
+			</li>
+			<li>
+				<a href="#">两会观察</a>
+			</li>
+		</ul>
+	</nav>
+	<div id="scroll-news"> 
+		<div id="scrollbox">
+		  <div class="indemo">
+			<div id="demo1" class="scrolltext"> 
+				<a href="http://news.hexun.com/2015-04-10/174845487.html" target="_blank">国务院落实政府工作报告：货币政策要松紧适度</a><a href="http://news.hexun.com/2015-03-19/174181952.html" target="_blank">总理出手分解62项工作任务 与经济下行压力抢时间</a><a href="http://house.hexun.com/2015-03-16/174065743.html" target="_blank">李克强定调楼市政策：鼓励自住改善性需求</a><a href="http://news.hexun.com/2015-03-16/174065630.html" target="_blank">中国应对经济放缓压力 稳增长后续政策蓄势待发</a><a href="http://news.hexun.com/2015-03-15/174060985.html" target="_blank">5分钟看完李克强总理记者会的全部17个问题 </a><a href="http://news.hexun.com/2015-03-15/174060248.html" target="_blank">李克强总理会见中外记者答问实录(全文)</a>
+			</div>
+		    <div id="demo2" class="scrolltext"></div>
+		  </div>
+		</div>
+	</div>
+<script type="text/javascript">
+	var demo = document.getElementById("scrollbox");
+	var demo1 = document.getElementById("demo1");
+	var demo2 = document.getElementById("demo2");
+	demo2.innerHTML = demo1.innerHTML;
+	function Marquee() {
+		if (demo.scrollLeft - demo2.offsetWidth >= 0) {
+			demo.scrollLeft -= demo1.offsetWidth;
+		} else {
+			demo.scrollLeft++;
+		}
+	}
+	var myvar = setInterval(Marquee, 30);
+	demo.onmouseout = function() {
+		myvar = setInterval(Marquee, 30);
+	}
+	demo.onmouseover = function() {
+		clearInterval(myvar);
+	}
+</script>
+</header>
+
+<section class="w1024">
+	<div id="toutiao" >
+		<span class="toutiao-tip">青洽<br />头条</span>
+	<!-- 两会头条 -->
+		<h2 class="toutiao-title">
+			<a href="#" title="头条">这里是头条这里是头条这里是头条这里是头条这里是头条</a>
+		</h2>
+		<ul>
+			<li><a href="#">[这里是头条这里是头条这里是头条]</a></li>
+			<li><a href="#">[这里是头条这里是头条这里是头条]</a></li>
+			<li><a href="#">[这里是头条这里是头条这里是头条]</a></li>
+			<li><a href="#">[这里是头条这里是头条这里是]</a></li>
+		</ul>
+	</div>
+</section>
+
+<section class="w1024" id="box1">
+	<!-- 360px  x  430px   -->
+	<div class="big-news w440 f-left">
+		<h3 class="big-title lhyw"><strong>青洽会要闻</strong></h3>
+		<div class="list-style-0">
+			<ul>
+				<li><a href="#" title="">这里asd是内容这里是内容这sdfsdf里asd是内容这里是内容sada</a></li>
+				<li><a href="#" title="">这里是asd内容这里是内容这里是内容这里是内容</a></li>
+				<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+				<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+				<li><a href="#" title="">这里是内容asd这里是内容这里sdfsd是内容这里是内容</a></li>
+				<li><a href="#" title="">这里是内容这里是zxsc内sfs容这里是内容这里是内容</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 660px x 430px -->
+	<div  class="big-pic-slider w550 f-right ">
+		<div class="pic-slider">
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/demo.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/demo1.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/demo.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/demo1.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+				</ul>
+			</div>
+			<div class="hd">
+						<ul></ul>
+			</div>
+<!-- 			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a> -->
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+
+
+<!--  
+<script>(function(){var testAppleMobile = /(iPhone|iPad|iPod)/i;if(testAppleMobile.test(navigator.userAgent)){document.getElementById("videPlayer_31daEO").innerHTML="<video  controls='controls' autoplay='autoplay' width='322' height='268' src='http://vdata.tool.hexun.com/2015-03-05/173767801.mp4'  autoplay='autoplay'></video>"}})();</script>
+
+-->
+
+
+<section class="w1024">
+		<div class="news-video w666 f-left">
+		<h3 class="big-title spbb"><strong>视频播报</strong></h3>
+			<ul class="clearfix">
+				<li class="frist-video">
+					<a href="">
+						<img src="images/demo.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题这是标题这是标题这是标题这是标题这是标题</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题这是标题这是标题这</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="w300 siderbar1 f-right siderbar-frist list-style-1 ">
+			<h4 class="sidebartitle"><strong>历届回顾</strong></h4>
+			<ul>
+				<li><a href="#" title="">这里asd是内容这里是内容这sdfsdf里asd是内容这里是内容sada</a></li>
+				<li><a href="#" title="">这里是asd内容这里是内容这里是内容这里是内容</a></li>
+				<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+				<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+				<li><a href="#" title="">这里是内容asd这里是内容这里sdfsd是内容这里是内容</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+</section>
+
+
+<section class="w1024" id="news-cevr">
+	<h3 class="big-title zxdt"><strong>最新动态</strong></h3>
+	<div class="news-list list-style-0">
+		<ul>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+
+
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+
+
+		</ul>
+	</div>
+</section>
+
+
+
+
+
+<section class="w100b">
+	<div class="beautiful-qh"> 
+	<h3 class="big-title mjxz"><strong>美景寻踪</strong></h3>
+		<div class="pic">
+			<ul>
+				<li class="frist">
+					<img src="images/demo1.jpg" alt="title">
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l2">
+					<img src="images/demo.jpg" alt="title">
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l3"> 
+					<img src="images/demo1.jpg" alt="title">
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l4 last">  
+					<img src="images/demo.jpg" alt="title">        
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l4 last">  
+					<img src="images/demo1.jpg" alt="title">        
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l4 last">  
+					<img src="images/demo.jpg" alt="title">        
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="w1024" id="box2">
+	<!-- 360px  x  430px   -->
+	<div class="big-news w440 f-left">
+		<h3 class="big-title lhyw"><strong>青洽会要闻</strong></h3>
+		<div class="list-style-0">
+			<ul>
+				<li><a href="#" title="">这里asd是内容这里是内容这sdfsdf里asd是内容这里是内容sada</a></li>
+				<li><a href="#" title="">这里是asd内容这里是内容这里是内容这里是内容</a></li>
+				<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+				<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+				<li><a href="#" title="">这里是内容asd这里是内容这里sdfsd是内容这里是内容</a></li>
+				<li><a href="#" title="">这里是内容这里是zxsc内sfs容这里是内容这里是内容</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 660px x 430px -->
+	<div class="w550 f-right big-pic-slider">
+		<div class="pic-slider">
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/demo.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/demo1.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/demo.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/demo1.jpg" alt="" >
+						</a>
+						<h5 class="h5-slider-title">
+							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
+						</h5>
+					</li>
+				</ul>
+			</div>
+			<div class="hd">
+						<ul></ul>
+			</div>
+ 			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a> 
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</section>
+
+
+
+
+
+
+
+
+<section class="w1024">
+	<!-- 即时报列表 -->
+	<div class="w660 f-left">
+	<h3 class="big-title spbb"><strong>视频播报</strong></h3>
+		<div class="box-news-list clearfix">
+			<div class="first-news f-left">
+				<div class="list-entry-first">
+					<div class="news-img-thum">
+						<img src="images/demo1.jpg" alt="" >
+					</div>
+					<h2>这是标题标题标题</h2>
+					<div class="sumary">
+						<p>青海省是我国青藏高原上的重要省份之一，因境内有全国最大的内陆咸水湖—青海湖而得名。青海面积72.23万平方公里，东西长1200多公里，南北宽800多公里，辖6州、1地、1市、51个县级行政单位，与甘肃、四川、西藏、新疆接壤。青海东部素有“天河锁钥”、“海藏咽喉”、“金城屏障”、“西域之冲”和“玉塞咽喉”等称谓。</p>
+						<div><a href="#">全文阅读</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="last-news f-right">
+				<ul class="">
+					<li>
+						<div class="last-news-img">
+							<a href=""><img src="images/demo.jpg" alt="" ></a>
+						</div>
+						<div class="last-news-img-entry">
+							<h3><a href="#">这是标题标题标题</a></h3>
+							<div class="last-news-img-entry-meta">
+								<time>2016-06-23</time>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="last-news-img">
+							<a href=""><img src="images/demo1.jpg" alt="" ></a>
+						</div>
+						<div class="last-news-img-entry">
+							<h3><a href="#">这是标题标题标题</a></h3>
+							<div class="last-news-img-entry-meta">
+								<time>2016-06-23</time>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="last-news-img">
+							<a href=""><img src="images/demo.jpg" alt="" ></a>
+						</div>
+						<div class="last-news-img-entry">
+							<h3><a href="#">这是标题标题标题这是标题标题标题是标题标题标题</a></h3>
+							<div class="last-news-img-entry-meta">
+								<time>2016-06-23</time>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="last-news-img">
+							<a href=""><img src="images/demo1.jpg" alt="" ></a>
+						</div>
+						<div class="last-news-img-entry">
+							<h3><a href="#">这是标题标题标题</a></h3>
+							<div class="last-news-img-entry-meta">
+								<time>2016-06-23</time>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="last-news-img">
+							<a href=""><img src="images/demo.jpg" alt="" ></a>
+						</div>
+						<div class="last-news-img-entry">
+							<h3><a href="#">这是标题标题标题</a></h3>
+							<div class="last-news-img-entry-meta">
+								<time>2016-06-23</time>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="news-video w666 f-left">
+		<h3 class="big-title spbb"><strong>视频播报</strong></h3>
+			<ul class="clearfix">
+				<li class="frist-video">
+					<a href="">
+						<img src="images/demo.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题这是标题这是标题这是标题这是标题这是标题</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题这是标题这是标题这</a>
+					</div>
+				</li>
+				<li >
+					<a href="">
+						<img src="images/demo1.jpg" alt="title">
+						<i></i>
+					</a>
+					<div class="video-descript">
+						<a href="#">这是标题</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="w350 f-right">
+		<aside class="w300 siderbar1  list-style-1 ">
+			<h4 class="sidebartitle"><strong>历届回顾</strong></h4>
+			<ul>
+				<li><a href="#" title="">这里asd是内容这里是内容这sdfsdf里asd是内容这里是内容sada</a></li>
+				<li><a href="#" title="">这里是asd内容这里是内容这里是内容这里是内容</a></li>
+				<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+				<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+				<li><a href="#" title="">这里是内容asd这里是内容这里sdfsd是内容这里是内容</a></li>
+			</ul>
+		</aside>
+		<aside class="w300 siderbar1  list-style-1" style="margin-top:10px;">
+			<h4 class="sidebartitle"><strong>历届回顾</strong></h4>
+			<ul>
+				<li><a href="#" title="">这里asd是内容这里是内容这sdfsdf里asd是内容这里是内容sada</a></li>
+				<li><a href="#" title="">这里是asd内容这里是内容这里是内容这里是内容</a></li>
+				<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+								<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+				<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+			</ul>
+		</aside>
+		<aside class="w300 siderbar1  list-style-1" style="margin-top:10px;">
+			<h4 class="sidebartitle"><strong>历届回顾</strong></h4>
+			<ul>
+				<li><a href="#" title="">这里asd是内容这里是内容这sdfsdf里asd是内容这里是内容sada</a></li>
+				<li><a href="#" title="">这里是asd内容这里是内容这里是内容这里是内容</a></li>
+				<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+					<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+						<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
+								<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+				<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
+			</ul>
+		</aside>
+
+
+
+
+	</div>
+	<div class="clearfix"></div>
+</section>
+
+
+
+<section class="w100b">
+	<div class="beautiful-qh"> 
+	<h3 class="big-title mjxz"><strong>美景寻踪</strong></h3>
+		<div class="pic">
+			<ul>
+				<li class="frist">
+					<img src="images/demo1.jpg" alt="title">
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l2">
+					<img src="images/demo.jpg" alt="title">
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l3"> 
+					<img src="images/demo1.jpg" alt="title">
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l4 last">  
+					<img src="images/demo.jpg" alt="title">        
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l4 last">  
+					<img src="images/demo1.jpg" alt="title">        
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+				<li class="l4 last">  
+					<img src="images/demo.jpg" alt="title">        
+						<div class="txt">
+							<p class="p1">作者 ： 默默的墨墨</p>
+							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+						</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
