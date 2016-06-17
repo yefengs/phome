@@ -203,22 +203,9 @@
 	<h3 class="big-title zxdt"><strong>最新动态</strong></h3>
 	<div class="news-list list-style-0">
 		<ul>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-
-
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-			<li><a href="#" title="####">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-
-
+			[e:loop={'2,3',12,0,0,'','istop DESC,newstime DESC'}]
+				<li><a href="<?=$bqsr[titleurl]?>" target="_blank" title="<?=$bqr[title]?>"><?=list_font($bqr[titlefont],$bqr[title])?></a></li>
+			[/e:loop] 
 		</ul>
 	</div>
 </section>
@@ -232,48 +219,15 @@
 	<h3 class="big-title mjxz"><strong>美景寻踪</strong></h3>
 		<div class="pic">
 			<ul>
-				<li class="frist" style="background-image:url(images/demo1.jpg)">
-						<a href="" class="click-point"></a>
+			[e:loop={'1,5,8,9,10,11,12,13',6,0,1,'','istop DESC,newstime DESC'}]
+				<li class="<?php if ($bqno == 1) { echo "frist";} ?>" style="background-image:url('http://www.qhlingwang.cn/d/thum.php?w=600&amp;h=329&amp;src=<?=$bqr[titlepic];?>')">
+						<a href="<?=$bqsr[titleurl]?>" target="_blank" title="<?=$bqr[title]?>"></a>
 						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+							<time class="font p2"><?=date('H:m',$bqr[newstime])?></time>
+							<h4 class="font p1"><?=$bqr[title]?></h4>
 						</div>
 				</li>
-				<li class="l2" style="background-image:url(images/demo.jpg)">
-						<a href="" class="click-point"></a>
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l3" style="background-image:url(images/demo1.jpg)">
-						<a href="" class="click-point"></a>
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l4 last" style="background-image:url(images/demo.jpg)">
-						<a href="" class="click-point"></a>       
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l4 last" style="background-image:url(images/demo1.jpg)">
-						<a href="" class="click-point"></a>        
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l4 last" style="background-image:url(images/demo.jpg)">
-						<a href="" class="click-point"></a>        
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
+			[/e:loop] 
 			</ul>
 		</div>
 	</div>
@@ -283,33 +237,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="w1024" id="box2">
 	<!-- 360px  x  430px   -->
 	<div class="big-news w440 f-left">
-		<h3 class="big-title lhyw"><strong>青洽会要闻</strong></h3>
+		<h3 class="big-title lhyw"><strong>电动环湖赛要闻</strong></h3>
 		<div class="list-style-0">
 			<ul>
-				<li><a href="#" title="">这里asd是内容这里是内容这sdfsdf里asd是内容这里是内容sada</a></li>
-				<li><a href="#" title="">这里是asd内容这里是内容这里是内容这里是内容</a></li>
-				<li><a href="#" title="">这里asd是内容这里asd是内sdfsd容这里是内容这asda里是内容</a></li>
-				<li><a href="#" title="">这里是内容这asd里是内容这sdfsdf里是内容这里asdasd是内容</a></li>
-				<li><a href="#" title="">这里是内容asd这里是内容这里sdfsd是内容这里是内容</a></li>
-				<li><a href="#" title="">这里是内容这里是zxsc内sfs容这里是内容这里是内容</a></li>
+			[e:loop={'2,3',6,0,0,'','istop DESC,newstime DESC'}]
+			<li><a href="<?=$bqsr[titleurl]?>" target="_blank" title="<?=$bqr[title]?>"><?=list_font($bqr[titlefont],$bqr[title])?></a></li>
+			[/e:loop] 	
 			</ul>
 		</div>
 	</div>
@@ -319,45 +255,19 @@
 		<div class="pic-slider">
 			<div class="bd">
 				<ul>
-					<li>
-						<a href="#">
-							<img src="images/demo.jpg" alt="" >
-						</a>
-						<h5 class="h5-slider-title">
-							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
-						</h5>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/demo1.jpg" alt="" >
-						</a>
-						<h5 class="h5-slider-title">
-							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
-						</h5>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/demo.jpg" alt="" >
-						</a>
-						<h5 class="h5-slider-title">
-							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
-						</h5>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/demo1.jpg" alt="" >
-						</a>
-						<h5 class="h5-slider-title">
-							<a href="#" title="">这里是内容这里是内容这里是内容这里是内容</a>
-						</h5>
-					</li>
+[e:loop={'1,5,8,9,10,11,12,13',8,0,1,'isgood = 1','istop DESC,newstime DESC'}]
+		<li>
+		<a href="<?=$bqsr[titleurl]?>" target="_blank" title="<?=$bqr[title]?>"><?=get_thumbnail($bqr[titlepic],550,366,$bqr[title]); ?></a>
+		<h5 class="h5-slider-title"><a href="<?=$bqsr[titleurl]?>" target="_blank" title="<?=$bqr[title]?>"><?=$bqr[title]?></a></h5>
+		</li>
+[/e:loop]
 				</ul>
 			</div>
 			<div class="hd">
 						<ul></ul>
 			</div>
- 			<a class="prev" href="javascript:void(0)"></a>
-			<a class="next" href="javascript:void(0)"></a> 
+ 			<!-- <a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>  -->
 		</div>
 	</div>
 	<div class="clearfix"></div>
@@ -373,7 +283,7 @@
 <section class="w1024">
 	<!-- 即时报列表 -->
 	<div class="w660 f-left">
-	<h3 class="big-title spbb"><strong>视频播报</strong></h3>
+	<h3 class="big-title spbb"><strong>最新动态</strong></h3>
 		<div class="box-news-list clearfix">
 			<div class="first-news f-left">
 				<div class="list-entry-first">
@@ -540,58 +450,26 @@
 </section>
 
 
-
-<section class="w100b">
+<section class="w100b" id="mjxz">
 	<div class="beautiful-qh"> 
 	<h3 class="big-title mjxz"><strong>美景寻踪</strong></h3>
 		<div class="pic">
 			<ul>
-				<li class="frist" style="background-image:url(images/demo1.jpg)">
-						<a href="" class="click-point"></a>
+			[e:loop={'1,5,8,9,10,11,12,13',6,0,1,'','istop DESC,newstime DESC'}]
+				<li class="<?php if ($bqno == 1) { echo "frist";} ?>" style="background-image:url('http://www.qhlingwang.cn/d/thum.php?w=600&amp;h=329&amp;src=<?=$bqr[titlepic];?>')">
+						<a href="<?=$bqsr[titleurl]?>" target="_blank" title="<?=$bqr[title]?>"></a>
 						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
+							<time class="font p2"><?=date('H:m',$bqr[newstime])?></time>
+							<h4 class="font p1"><?=$bqr[title]?></h4>
 						</div>
 				</li>
-				<li class="l2" style="background-image:url(images/demo.jpg)">
-						<a href="" class="click-point"></a>
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l3" style="background-image:url(images/demo1.jpg)">
-						<a href="" class="click-point"></a>
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l4 last" style="background-image:url(images/demo.jpg)">
-						<a href="" class="click-point"></a>       
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l4 last" style="background-image:url(images/demo1.jpg)">
-						<a href="" class="click-point"></a>        
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
-				<li class="l4 last" style="background-image:url(images/demo.jpg)">
-						<a href="" class="click-point"></a>        
-						<div class="txt">
-							<p class="p1">作者 ： 默默的墨墨</p>
-							<p class="p2">我的个人拉萨之旅｜｜故事之城</p>
-						</div>
-				</li>
+			[/e:loop] 
 			</ul>
 		</div>
 	</div>
 </section>
+
+
 <footer id="footer">
 	<div class="footer-top">
 		<div class="about w1024 clearfix">

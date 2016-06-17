@@ -62,7 +62,8 @@ jQuery(document).ready(function() {
 	easing:"easeOutElastic",
 	trigger:"mouseover"
 });
-$(".pic ul li.frist").stop(true).animate({width:"600px"},500).siblings().stop(true).animate({width:"100px"},500);$(".pic ul li").hover(function(){$(this).stop(true).animate({width:"600px"},500).siblings().stop(true).animate({width:"100px"},500);});
+	$(".pic ul li.frist").stop(true).animate({width:"600px"},500).siblings().stop(true).animate({width:"100px"},500);
+	$(".pic ul li").hover(function(){$(this).stop(true).animate({width:"600px"},500).siblings().stop(true).animate({width:"100px"},500);});
 });
 
 
